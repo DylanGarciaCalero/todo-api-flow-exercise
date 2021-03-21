@@ -27,6 +27,7 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
+    "registry-url": "^5.1.0",
     "sqlite3": "^5.0.2",
     "uuid": "^8.3.2"
   }

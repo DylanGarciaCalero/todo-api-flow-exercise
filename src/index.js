@@ -9,12 +9,16 @@ import Logger from './lib/Logger.js';
 import authenticate from './actions/auth/index.js';
 import registerTodoEndpoints from './actions/todo/registerTodoEndpoints.js';
 import middleware from './middleware/index.js';
+import registryUrl from 'registry-url';
 
 // create a new express application
 const app = Express();
 
 // init dotenv
 dotenv.config();
+
+//enable registry-url
+app.use(registryUrl);
 
 // add json body parser
 app.use(bodyParser.json());
